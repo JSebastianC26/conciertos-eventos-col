@@ -3,11 +3,21 @@ import {config} from 'dotenv';
 import pg from 'pg';
 config();
 const app = express();
-const pool = new pg.Pool({
-    connectionString: process.env.DATABASE_URL, 
-    ssl: true
-})
+
 const PORT = process.env.PORT;
+const SSL_DB = process.env.SSL_DB;
+const DATABASE_URL = process.env.DATABASE_URL;
+
+let l_ssl = false;
+
+if (SSL_DB=='S'){
+    l_ssl = true;
+}
+
+const pool = new pg.Pool({
+    connectionString: DATABASE_URL, 
+    ssl: l_ssl
+})
 
 app.get('/', (req, res) => {
     res.send("Hello world!")
