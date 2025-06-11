@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <%- include('partials/head/encabezados.ejs'); %>
+    <link rel="stylesheet" href="libraries/css/Bootstrap-5.3.3.css" />
+    <link rel="stylesheet" href="css/componentes/slider.css">
+</head>
+<body>
+    <%- include('partials/body/notasMusicales.ejs'); %>
+    <%- include('partials/body/header.ejs'); %>
+    <%- include('partials/body/navbar.ejs'); %>
+
+    <%- include('partials/body/slider.ejs', { imagenes: sliderData }) %>
+
+    <%- include('partials/body/nextEvents.ejs', { eventos: eventos }) %>
+    
+    <%- include('partials/footer/whatsapp.ejs'); %>
+    <%- include('partials/footer/footer.ejs'); %>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Efecto parallax suave en scroll
+        window.addEventListener("scroll", () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector(".main-header");
+            const speed = scrolled * 0.5;
+            if (parallax) {
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+    </script>
+</body>
+</html>

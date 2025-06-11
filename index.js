@@ -1,33 +1,28 @@
 import express from 'express';
-import {config} from 'dotenv';
-import pg from 'pg';
-config();
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+import { config } from 'dotenv';
+import indexRoutes  from './server/rutas/index.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const app = express();
+config();
 
 const PORT = process.env.PORT;
-const SSL_DB = process.env.SSL_DB;
-const DATABASE_URL = process.env.DATABASE_URL;
 
-let l_ssl = false;
 
-if (SSL_DB=='S'){
-    l_ssl = true;
-}
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
+app.use(express.static(__dirname + "/public"));
 
-const pool = new pg.Pool({
-    connectionString: DATABASE_URL, 
-    ssl: l_ssl
-})
+app.use('/', indexRoutes.router);
 
-app.get('/', (req, res) => {
-    res.send("Hello world!")
-})
+// app.use('/admin', indexRoutes);
 
-app.get('/ping', async (req, res) =>{
-    const result = await pool.query('select now()');
+app.use('/login', indexRoutes.router);
 
-    return res.json(result.rows[0])
-})
+
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
