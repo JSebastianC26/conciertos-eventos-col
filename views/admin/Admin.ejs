@@ -2,17 +2,15 @@
 <html lang="en">
 <head>
     <title><%= title %></title>
-    <%- include('partials/encabezados.ejs'); %>
-    <link rel="stylesheet" href="css/componentes/slider.css">
+    <%- include('../partials/encabezados.ejs'); %>
+    <!-- <link rel="stylesheet" href="css/admin.css"> -->
 </head>
 <body>
-    <%- include('partials/notasMusicales.ejs'); %>
-    <%- include('partials/componentes/header.ejs'); %>
-    <%- include('partials/navbar.ejs', {navbar:menu}); %>
-    <%- include('partials/componentes/slider.ejs', { imagenes: sliderData }) %>
-    <%- include('partials/componentes/nextEvents.ejs', { eventos: eventos }) %>    
-    <%- include('partials/whatsapp.ejs'); %>
-    <%- include('partials/footer.ejs'); %>
+    <%- include('../partials/notasMusicales.ejs'); %>
+    <%- include('../partials/navbar.ejs', {navbar:menu}); %>
+
+
+    <%- include('../partials/footer.ejs'); %>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

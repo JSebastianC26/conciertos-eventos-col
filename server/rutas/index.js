@@ -21,6 +21,13 @@ const pool = new pg.Pool({
 
 
 router.get('/', (req, res) => {
+    const NavBar = [
+        { title : "Eventos", icon: "fas fa-clock", ruta: "eventos" },
+        { title : "Calendario", icon: "fas fa-calendar-alt", ruta: "calendario" },
+        { title : "Contáctanos", icon: "fas fa-envelope", ruta: "contactanos" },
+        { title : "Quienes Somos?", icon: "fas fa-building", ruta: "quienesSomos" }
+    ];
+
     const eventos = [
         { titulo: "TRINIDAD BENDITA BOGOTA", fecha: "2025-11-22", agotado: false },
         { titulo: "PERROS CRIOLLOS CUCUTA", fecha: "2025-06-28", agotado: false }
@@ -45,6 +52,7 @@ router.get('/', (req, res) => {
 
     res.render("Home", {
         title: "Home - Conciertos y Eventos COL",
+        menu:NavBar,
         sliderData,
         eventos
     });
@@ -54,8 +62,18 @@ router.get('/', (req, res) => {
 // app.use('/admin', require('./middleware/auth'), require('./middleware/admin'));
 
 router.get('/admin', (req, res) => {
-    res.render('Admin', {
-        title: 'Admin - Conciertos y Eventos COL'
+    const NavBarAdmin = [
+        { title : "Eventos", icon: "fas fa-clock", ruta: "admin/eventos" },
+        { title : "Usuarios", icon: "fas fa-user", ruta: "admin/usuarios" },
+        { title : "Lugares", icon: "fas fa-location-dot", ruta: "admin/lugares" },
+        { title : "Categorías", icon: "fas fa-icons", ruta: "admin/categorías" },
+        { title : "Ciudades", icon: "fas fa-city", ruta: "admin/ciudades" },
+        { title : "Configuración", icon: "fas fa-gear", ruta: "admin/configuracion" }
+    ];
+
+    res.render('./admin/Admin', {
+        title: 'Admin - Conciertos y Eventos COL',
+        menu:NavBarAdmin
     });
 });
 
