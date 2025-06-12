@@ -1,5 +1,4 @@
-import dbExpressions from './Sentencias.js';
-import db from '../Controladores/ejecutar.js';
+import dbExpressions from '../controladores/constructor.js';
 
 let sql = await dbExpressions.Eventos.read({limit:3, orderBy:"id asc"});
 

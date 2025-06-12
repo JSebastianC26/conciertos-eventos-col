@@ -1,18 +1,20 @@
 import pg from "pg";
-import dotenv from 'dotenv';
-dotenv.config();
+import { config } from 'dotenv';
 
-const DB_HOST = process.env.DB_HOST;
-const DB_PORT = process.env.DB_PORT;
-const DB_NAME = process.env.DB_NAME;
-const DB_USER = process.env.DB_USER;
-const DB_PASSWORD = process.env.DB_PASSWORD;
+config();
 
+const DATABASE_URL = process.env.DATABASE_URL;
+const SSL_DB = process.env.SSL_DB;
 
-export const pool = new pg.Pool({
-    host:DB_HOST,
-    port:DB_PORT,
-    database:DB_NAME,
-    user:DB_USER,
-    password:DB_PASSWORD
+let l_ssl = false;
+
+if (SSL_DB === 'S') {
+    l_ssl = true;
+}
+
+const pool = new pg.Pool({
+    connectionString: DATABASE_URL,
+    ssl: l_ssl
 });
+
+export default pool;

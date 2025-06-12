@@ -131,6 +131,4 @@ class CrearSentencia {
     }
 }
 
-export default {
-    CrearSentencia 
-};
+export default CrearSentencia ;

@@ -1,32 +1,10 @@
 import express from 'express';
-import pg from 'pg';
 import { config } from 'dotenv';
-
+import variables from '../modelos/config.js';
 config();
 const router = express.Router();
 
-const SSL_DB = process.env.SSL_DB;
-const DATABASE_URL = process.env.DATABASE_URL;
-
-let l_ssl = false;
-
-if (SSL_DB === 'S') {
-    l_ssl = true;
-}
-
-const pool = new pg.Pool({
-    connectionString: DATABASE_URL,
-    ssl: l_ssl
-});
-
-
 router.get('/', (req, res) => {
-    const NavBar = [
-        { title : "Eventos", icon: "fas fa-clock", ruta: "eventos" },
-        { title : "Calendario", icon: "fas fa-calendar-alt", ruta: "calendario" },
-        { title : "Contáctanos", icon: "fas fa-envelope", ruta: "contactanos" },
-        { title : "Quienes Somos?", icon: "fas fa-building", ruta: "quienesSomos" }
-    ];
 
     const eventos = [
         { titulo: "TRINIDAD BENDITA BOGOTA", fecha: "2025-11-22", agotado: false },
@@ -51,8 +29,15 @@ router.get('/', (req, res) => {
     ];
 
     res.render("Home", {
-        title: "Home - Conciertos y Eventos COL",
-        menu:NavBar,
+        title: "Home",
+        name: variables.Configuraciones.NOMBRE,
+        headerText:variables.Configuraciones.HDRTXT,
+        menu: variables.NavBar.public,
+        whatsapp: variables.Configuraciones.NUMWPP,
+        whatsappText: variables.Configuraciones.TXTWPP,
+        instagram: variables.Configuraciones.LINKIG,
+        copyRight: variables.Configuraciones.COPYRG,
+
         sliderData,
         eventos
     });
@@ -62,18 +47,9 @@ router.get('/', (req, res) => {
 // app.use('/admin', require('./middleware/auth'), require('./middleware/admin'));
 
 router.get('/admin', (req, res) => {
-    const NavBarAdmin = [
-        { title : "Eventos", icon: "fas fa-clock", ruta: "admin/eventos" },
-        { title : "Usuarios", icon: "fas fa-user", ruta: "admin/usuarios" },
-        { title : "Lugares", icon: "fas fa-location-dot", ruta: "admin/lugares" },
-        { title : "Categorías", icon: "fas fa-icons", ruta: "admin/categorías" },
-        { title : "Ciudades", icon: "fas fa-city", ruta: "admin/ciudades" },
-        { title : "Configuración", icon: "fas fa-gear", ruta: "admin/configuracion" }
-    ];
-
     res.render('./admin/Admin', {
         title: 'Admin - Conciertos y Eventos COL',
-        menu:NavBarAdmin
+        menu: variables.NavBar.admin
     });
 });
 
@@ -88,9 +64,7 @@ router.get('/ping', async (req, res) => {
     return res.json(result.rows[0]);
 });
 
-export default{
-    router
-};
+export default router;
 
 
 

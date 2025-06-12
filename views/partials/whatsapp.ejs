@@ -1,7 +1,14 @@
+<% 
+let whatsappLink=`https://wa.me/${whatsapp}`; 
+if (whatsappText) { 
+    whatsappLink +=`?text=${encodeURIComponent(whatsappText)}`; 
+} 
+%>
+
 <div class="stycky-wpp">
-    <a href="https://wa.me/573016091063?text=Hola, me puedes ayudar con" target="_blank" class="stycky-wpp-btn">
+    <a href="<%= whatsappLink %>" target="_blank" class="stycky-wpp-btn">
         <img width="64" height="64" decoding="async" src="../img/iconos/Whatsapp_Icon.png"
             alt="whatsapp-contacto" />
         <div class="textoBoton">CONTÁCTANOS</div>
     </a>
-</div>
+</div> 

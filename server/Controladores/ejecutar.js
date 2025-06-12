@@ -1,4 +1,4 @@
-import {pool} from '../config/database.js';
+import pool from '../config/database.js';
 
 const sentencias = {};
 
@@ -26,6 +26,4 @@ const ejecutarConParametros = async (sentencia, parametros = []) =>{
 
 sentencias.ejecutarConParametros = ejecutarConParametros;
 
-export default {
-    sentencias
-};
+export default sentencias;
