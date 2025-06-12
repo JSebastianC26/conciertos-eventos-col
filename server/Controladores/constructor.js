@@ -1,4 +1,4 @@
-import crearSentencia from './crearSentencia.js';
+import crearSentencia from './CrearSentencia.js';
 
 const Roles = new crearSentencia('tRoles');
 const Usuarios = new crearSentencia('tUsuarios');
