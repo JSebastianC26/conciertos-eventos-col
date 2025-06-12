@@ -1,5 +1,8 @@
 import constructor from '../controladores/constructor.js';
 import db from '../controladores/ejecutar.js';
+import fs from 'fs';
+
+console.log('Existe el archivo constructor?', fs.existsSync('../controladores/constructor.js'));
 
 const NavBar = {
     public : [
