@@ -1,5 +1,5 @@
-import constructor from '../controladores/constructor.js';
-import db from '../controladores/ejecutar.js';
+import constructor from '../temp/constructor.js';
+import db from '../temp/ejecutar.js';
 import fs from 'fs';
 
 console.log('Existe el archivo constructor?', fs.existsSync('../controladores/constructor.js'));
