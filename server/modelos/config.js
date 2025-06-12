@@ -1,5 +1,5 @@
 import sentencias from '../controladores/crear_sentencia.js';
-import db from '../controlador/ejecutar.js';
+import db from '../controladores/ejecutar.js';
 
 const NavBar = {
     public : [
