@@ -1,4 +1,4 @@
-import constructor from '../controlador/constructor.js';
+import sentencias from '../controladores/crear_sentencia.js';
 import db from '../controlador/ejecutar.js';
 
 const NavBar = {
@@ -18,7 +18,7 @@ const NavBar = {
     ]
 };
 
-let sql = await constructor.Configuraciones.read({
+let sql = await sentencias.Constructor.Configuraciones.read({
     columnas:"*"
 });
 

@@ -131,4 +131,32 @@ class CrearSentencia {
     }
 }
 
-export default CrearSentencia ;
+const Roles = new CrearSentencia('tRoles');
+const Usuarios = new CrearSentencia('tUsuarios');
+
+const Categorias = new CrearSentencia('tCategorias');
+const Ciudades = new CrearSentencia('tCuidades');
+const Estados = new CrearSentencia('tEstados');
+const LugaresEventos = new CrearSentencia('tLugaresEventos');
+const Localidades = new CrearSentencia('tLocalidades');
+const Eventos = new CrearSentencia('tEventos');
+const EventosLocalidades = new CrearSentencia('tEventosLocalidades');
+const Configuraciones = new CrearSentencia('tConfiguraciones');
+
+const Constructor = {
+    Roles,
+    Usuarios,
+    Categorias,
+    Ciudades,
+    Estados,
+    LugaresEventos,
+    Localidades,
+    Eventos,
+    EventosLocalidades,
+    Configuraciones
+}
+
+export default {
+    Constructor,
+    CrearSentencia
+};
