@@ -1,11 +1,13 @@
 /*VARIABLES CON PALETA DE COLORES*/
 :root {
-  --orange-primary: #ff6b35;
-  --orange-light: #ff8a5b;
   --turquoise: #00bcd4;
+  --orange-primary: #ff6b35;
+  --purple-accent: #9c27b0;
+
+  --orange-light: #ff8a5b;
   --turquoise-dark: #0097a7;
   --yellow-gold: #ffc107;
-  --purple-accent: #9c27b0;
+  
   --dark-bg: #1a1a2e;
   --card-bg: rgba(255, 255, 255, 0.95);
   --text-dark: #2c3e50;

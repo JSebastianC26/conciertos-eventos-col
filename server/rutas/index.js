@@ -6,25 +6,30 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
 
-    const eventos = [
-        { titulo: "TRINIDAD BENDITA BOGOTA", fecha: "2025-11-22", agotado: false },
-        { titulo: "PERROS CRIOLLOS CUCUTA", fecha: "2025-06-28", agotado: false }
-    ];
-
-    const sliderData = [
+    const Eventos = [
         {
+            artista: "BLESSD",
             titulo: "TRINIDAD BENDITA BOGOTA",
+            fechaHora: "NOVIEMBRE 11 • 8:00 PM",
+            fecha: "2025-11-22",
+            ubicacion: "BOGOTA",
             descripcion: "El bendito 💙💙💙 Presentando su nuevo álbum “TRINIDAD BENDITA” 💙💙 Se prepara Bogotá para este excelente concierto del cantante número 1 de Colombia.",
             url: "/uploads/blessd.jpg",
-            alt: "Concierto Blessd",
-            posicion: 1
+            promocionar: true,
+            categoria: "Concierto",
+            agotado: false
         },
         {
+            artista: "PERROS CRIOLLOS",
             titulo: "PERROS CRIOLLOS CUCUTA",
+            fechaHora: "Junio 11 • 8:00 PM",
+            fecha: "2025-06-28",
+            ubicacion: "CUCUTA",
             descripcion: "🐶PERROS CRIOLLOS REGRESA A CÚCUTA🐶",
             url: "/uploads/perros-criollos.png",
-            alt: "Perros Criollos",
-            posicion: 1
+            promocionar: true,
+            categoria: "Concierto",
+            agotado: false
         }
     ];
 
@@ -37,9 +42,7 @@ router.get('/', (req, res) => {
         whatsappText: variables.Configuraciones.TXTWPP,
         instagram: variables.Configuraciones.LINKIG,
         copyRight: variables.Configuraciones.COPYRG,
-
-        sliderData,
-        eventos
+        Eventos : Eventos
     });
 });
 
