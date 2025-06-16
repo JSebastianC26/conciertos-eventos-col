@@ -212,7 +212,7 @@ router.get('/entradas', (req, res) => {
 
     const evento = Eventos.find(e => e.id == eventId);
 
-    res.render("entradas", {
+    res.render("Entradas", {
         title: "Entradas",
         name: variables.Configuraciones.NOMBRE,
         headerText:variables.Configuraciones.HDRTXT,
