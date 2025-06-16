@@ -123,6 +123,7 @@ const Eventos = [
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
+        imagenLocalidades:"",
         localidades: [
             { nombre: "General familiar", precio: 210000 },
             { nombre: "General", precio: 210000 },
@@ -145,10 +146,11 @@ const Eventos = [
         ubicacion: "MANIZALES - PLAZA DE TOROS ",
         descripcion: "MORAT-ASUNTOS PENDIENTES EN MANIZALES",
         url: "/uploads/morat-asuntos-pendientes.jpg",
-        promocionar: true,
+        promocionar: false,
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
+        imagenLocalidades:"",
         localidades: [
             { nombre: "Platino", precio: 500000 },
             { nombre: "Vip familiar", precio: 315000 },
@@ -156,7 +158,107 @@ const Eventos = [
             { nombre: "Preferencial A", precio: 250000 },
             { nombre: "Preferencial B", precio: 240000 }
         ]
+    },
+    {
+        id: 7,
+        artista: "BAD BUNNY",
+        titulo: "🐰📸BAD BUNNY - DEBÍ TIRAR MÁS FOTOS WORLD TOUR 📸🐰",
+        fechaHora: "Enero 23/24/25 DEL 2026",
+        fecha: "2026-01-23",
+        ubicacion: "ESTADIO ATANASIO GIRARDOT - MEDELLÍN",
+        descripcion: "🐰📸BAD BUNNY - DEBÍ TIRAR MÁS FOTOS WORLD TOUR 📸🐰 EN MEDELLÍN",
+        url: "/uploads/bad-bunny-dtmf.jpg",
+        promocionar: false,
+        categoria: "Concierto",
+        agotado: false,
+        tipo: "concierto",
+        imagenLocalidades: "/uploads/bad-bunny-dtmf-localidades.jpg",
+        localidades: [
+            { nombre: "SUR BAJA (+18)", precio: 280000 },
+            { nombre: "SUR ALTA (+18)", precio: 310000 },
+            { nombre: "ORIENTAL BAJA FAMILIAR (+7)", precio: 460000 },
+            { nombre: "ORIENTAL ALTA (+18)", precio: 510000 },
+            { nombre: "GRAMILLA NUEVA YOL (+18)", precio: 760000 },
+            { nombre: "OCCIDENTAL BAJA FAMILIAR (+7)", precio: 824000 },
+            { nombre: "OCCIDENTAL ALTA (+18)", precio: 950000 },
+            { nombre: "OCCIDENTAL ALTA SILVER (+18)", precio: 1000000 },
+            { nombre: "GRAMILLA VIP (+18)", precio: 1200000 },
+            { nombre: "PMU (+18)", precio: 1250000 },
+            { nombre: "PALCOS ORO OCCIDENTAL x10 (+18)", precio: 18000000 },
+            { nombre: "PALCOS ORO ORIENTAL FAMILIAR x10 (+7)", precio: 18000000 },
+            { nombre: "PALCOS PLATINO OCCIDENTAL x10 (+18)", precio: 26700000 },
+            { nombre: "PALCOS PLATINO ORIENTAL x10 (+18)", precio: 26700000 }
+        ]
+    },
+    {
+        id: 8,
+        artista: "FUERZA REGIDA",
+        titulo: "🎶🎷🥁FUERZA REGIDA🥁🎷🎶",
+        fechaHora: "Agosto 01 • 07:00 PM",
+        fecha: "2025-01-23",
+        ubicacion: "MOVISTAR ARENA - BOGOTÁ",
+        descripcion: "🎶🎷🥁FUERZA REGIDA🥁🎷🎶 EN BOGOTÁ",
+        url: "/uploads/fuerza-regida.jpg",
+        promocionar: true,
+        categoria: "Concierto",
+        agotado: false,
+        tipo: "concierto",
+        imagenLocalidades: "/uploads/fuerza-regida-localidades.jpg",
+        localidades: [
+            { nombre: "Tribuna fan sur", precio: 805000 },
+            { nombre: "Tribuna fan norte", precio: 805000 },
+            { nombre: "Piso 2 (202-205 & 215-218)", precio: 530000 },
+            { nombre: "Platea", precio: 473000 },
+            { nombre: "Piso 2 (206-207 & 213-214)", precio: 470000 },
+            { nombre: "Piso 2 (208-212)", precio: 370000 },
+            { nombre: "Piso 3 (307-313)", precio: 315000 },
+            { nombre: "Piso 3 (305-306 & 314-315)", precio: 300000 },
+            { nombre: "Piso 3 (303-304 & 316-317)", precio: 272000 },
+            { nombre: "Piso 3 (303-318)", precio: 240000 }
+        ]
+    },
+    {
+        id: 9,
+        artista: "F*CKS NEWS",
+        titulo: "🚨 F*CKS NEWS NOTICIERO -BARRANQUILLA🚨",
+        fechaHora: "JUNIO 17 • 08:00 PM",
+        fecha: "2025-06-17",
+        ubicacion: "Teatro Jose Consuegra Higgins",
+        descripcion: "🚨 F*CKS NEWS NOTICIERO -BARRANQUILLA🚨",
+        url: "/uploads/fucks-news-barranquilla.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "",
+        localidades: [
+            { nombre: "GENERAL", precio: 150000 },
+            { nombre: "BALCÓN", precio: 130000 }
+        ]
+    },
+    {
+        id: 10,
+        artista: "F*CKS NEWS",
+        titulo: "🚨 F*CKS NEWS NOTICIERO -MOSQUERA",
+        fechaHora: "JUNIO 23 • 08:00 PM",
+        fecha: "2025-06-23",
+        ubicacion: "Auditorio municipal de Mosquera",
+        descripcion: "¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país!",
+        url: "/uploads/fucks-news-mosquera.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "",
+        localidades: [
+            { nombre: "ZONA IZQUIERDA", precio: 150000 },
+            { nombre: "ZONA CENTRAL", precio: 150000 },
+            { nombre: "ZONA DERECHA", precio: 150000 }
+        ]
     }
+
+
+
 ];
 
 

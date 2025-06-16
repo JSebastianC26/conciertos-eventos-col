@@ -425,14 +425,14 @@
             const total = (currentLocation.precio * quantity) ;
 
             Swal.fire({
-                title: 'RECUERDE!',
+                title: '¡RECUERDE!',
                 html: `
                     <strong>Para la entrega de boletas, debe enviar el comprobante por la linea de WhatsApp</strong><br><br><br>
                     <strong>Evento:</strong> ${evento.titulo}<br>
                     <strong>Localidad:</strong> ${currentLocation.nombre}<br>
                     <strong>Cantidad:</strong> ${quantity}<br>
                     <strong>Total:</strong> $${total.toLocaleString()}<br><br>
-                    Serás redirigido a los métodos de pago.
+                    Serás redirigido a los métodos de pago. (Si necesitas inscribir la cuenta para pagos mayores a 1.000.000 comunícate con tu asesor en WhatsApp para que te brinde la información)
                 `,
                 icon: 'info',
                 confirmButtonText: 'Aceptar'
