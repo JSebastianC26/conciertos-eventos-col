@@ -5,8 +5,7 @@ const NavBar = {
     public : [
         { title : "Eventos", icon: "fas fa-clock", ruta: "#eventos" },
         { title : "Calendario", icon: "fas fa-calendar-alt", ruta: "#calendario" },
-        { title : "Contáctanos", icon: "fas fa-envelope", ruta: "#contactanos" },
-        { title : "Quienes Somos?", icon: "fas fa-building", ruta: "#quienesSomos" }
+        { title : "Quienes Somos", icon: "fas fa-building", ruta: "#quienesSomos" }
     ],
     admin : [
         { title : "Eventos", icon: "fas fa-clock", ruta: "admin/eventos" },

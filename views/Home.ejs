@@ -18,27 +18,7 @@
         </section>
         <!-- calendario -->
         <section id="calendario">
-            <div class="calendar-container">
-                <div class="calendar-header">
-                    <button class="nav-btn" id="prevMonth">← Anterior</button>
-                    <div class="month-year" id="monthYear"></div>
-                    <button class="nav-btn" id="nextMonth">Siguiente →</button>
-                </div>
-                
-                <div class="calendar" id="calendar"></div>
-            </div>
-            <!-- Modal -->
-            <!-- <div id="eventModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                        <h2 id="modalTitle">Detalles del Evento</h2>
-                    </div>
-                    <div class="modal-body">
-                        <div class="event-details" id="eventDetails"></div>
-                    </div>
-                </div>
-            </div> -->
+            <%- include('partials/componentes/calendario.ejs') %> 
         </section>
         <!-- contactanos -->
         <section id="contactanos">
@@ -46,7 +26,7 @@
         </section>
         <!-- quienes somos -->
         <section id="quienesSomos">
-            <!-- <%- include('partials/componentes/eventos.ejs') %>  -->
+            <%- include('partials/quienesSomos.ejs') %> 
         </section>
     </div>
 
@@ -64,6 +44,10 @@
                 parallax.style.transform = `translateY(${speed}px)`;
             }
         });
+        
+        function buyTicket(eventId) {
+            window.location.href = `/entradas?id=${eventId}`;
+        }
     </script>
 </body>
 </html>
