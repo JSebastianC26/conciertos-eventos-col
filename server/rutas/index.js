@@ -70,7 +70,7 @@ const Eventos = [
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
-        imagenLocalidades:"/uploads/morat-asuntos-pendientes-buc-localidades.jpg",
+        imagenLocalidades: "/uploads/morat-asuntos-pendientes-buc-localidades.jpg",
         localidades: [
             { nombre: "General familiar", precio: 210000 },
             { nombre: "General", precio: 210000 },
@@ -97,7 +97,7 @@ const Eventos = [
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
-        imagenLocalidades:"/uploads/morat-asuntos-pendientes-bar-localidades.jpg",
+        imagenLocalidades: "/uploads/morat-asuntos-pendientes-bar-localidades.jpg",
         localidades: [
             { nombre: "Palco VIP occidental", precio: 800000 },
             { nombre: "Palco VIP Oriental Familiar", precio: 800000 },
@@ -123,7 +123,7 @@ const Eventos = [
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
-        imagenLocalidades:"",
+        imagenLocalidades: "",
         localidades: [
             { nombre: "General familiar", precio: 210000 },
             { nombre: "General", precio: 210000 },
@@ -150,7 +150,7 @@ const Eventos = [
         categoria: "Concierto",
         agotado: false,
         tipo: "concierto",
-        imagenLocalidades:"",
+        imagenLocalidades: "",
         localidades: [
             { nombre: "Platino", precio: 500000 },
             { nombre: "Vip familiar", precio: 315000 },
@@ -255,7 +255,90 @@ const Eventos = [
             { nombre: "ZONA CENTRAL", precio: 150000 },
             { nombre: "ZONA DERECHA", precio: 150000 }
         ]
+    },
+    {
+        id: 11,
+        artista: "BEÉLE",
+        titulo: "🎱🎵BEÉLE EN CONCIERTO 🎵🎱",
+        fechaHora: "Noviembre 14 • 9:30 PM",
+        fecha: "2025-11-14",
+        ubicacion: "Movistar Arena - BOGOTÁ",
+        descripcion: "🎱 BEÉLE en vivo en el Movistar Arena - Bogotá. Edad mínima 14 años.",
+        url: "/uploads/beele-bogota.jpg",
+        promocionar: true,
+        categoria: "Concierto",
+        agotado: false,
+        tipo: "concierto",
+        imagenLocalidades: "/uploads/beele-bogota-localidades.jpg",
+        localidades: [
+            { nombre: "Platea", precio: 250000 },
+            { nombre: "Piso 2 (202-205 & 215-218)", precio: 320000 },
+            { nombre: "Piso 2 (206-214)", precio: 290000 },
+            { nombre: "Piso 3 (307-313)", precio: 210000 },
+            { nombre: "Piso 3 (303-306 & 314-317)", precio: 180000 },
+            { nombre: "Tribuna Fan Sur", precio: 500000 },
+            { nombre: "Tribuna Fan Norte", precio: 500000 }
+        ]
+    },
+    {
+        id: 12,
+        artista: "HEBERT VARGAS",
+        titulo: "🎹🎵HEBERT VARGAS - MI HISTORIA MUSICAL 🎼🎤",
+        fechaHora: "Julio 19 • 7:00 PM",
+        fecha: "2025-07-19",
+        ubicacion: "Centro de Eventos La Macarena - MEDELLÍN",
+        descripcion: "🎹 Mi Historia Musical de principio a fin - Hebert Vargas en Medellín",
+        url: "/uploads/helbert-vargas-medellin.jpg",
+        promocionar: true,
+        categoria: "Concierto",
+        agotado: false,
+        tipo: "concierto",
+        imagenLocalidades: "/uploads/helbert-vargas-medellin-localidades.jpg",
+        localidades: [
+            { nombre: "General", precio: 120000 },
+            { nombre: "Preferencial", precio: 180000 },
+            { nombre: "Presidencial", precio: 600000 },
+            { nombre: "Palco toriles", precio: 4800000 },
+            { nombre: "Oro", precio: 5800000 },
+            { nombre: "Diamante", precio: 6800000 },
+            { nombre: "Alfombra roja", precio: 8800000 },
+            { nombre: "Invitados especiales", precio: 10000000 }
+        ]
+    },
+    {
+        id: 13,
+        artista: "STREAM FIGHTERS 4",
+        titulo: "🥊 STREAM FIGHTERS 4 - WESTCOL 🥊",
+        fechaHora: "Octubre 18 • 4:00 PM",
+        fecha: "2025-10-18",
+        ubicacion: "Coliseo MedPlus - BOGOTÁ",
+        descripcion: "🥊 Evento de boxeo y entretenimiento con Westcol y creadores de contenido - Edad mínima 8 años.",
+        url: "/uploads/stream-figthers.jpg",
+        promocionar: true,
+        categoria: "Deporte / Entretenimiento",
+        agotado: false,
+        tipo: "evento",
+        imagenLocalidades: "/uploads/stream-figthers-localidades.jpg",
+        localidades: [
+            { nombre: "Estrellitas - Familiar", precio: 160000 },
+            { nombre: "Los Reales - Familiar (SR111-119) Bajas", precio: 195000 },
+            { nombre: "Goat - Familiar (SR113-115-117)", precio: 250000 },
+            { nombre: "La Grasa - Familiar (SR113-115-117)", precio: 320000 },
+            { nombre: "Estrellitas (SR112-120) Altas", precio: 160000 },
+            { nombre: "Los Reales (SR112-120) Bajas", precio: 210000 },
+            { nombre: "Goat (SR114-116-118) Altas", precio: 255000 },
+            { nombre: "La Grasa (SR114-116-118) Bajas", precio: 320000 },
+            { nombre: "El Barrio", precio: 255000 },
+            { nombre: "Palcos La Plena B", precio: 4300000 },
+            { nombre: "Palcos La Plena A", precio: 4800000 },
+            { nombre: "Las Pamparas", precio: 550000 },
+            { nombre: "Palcos Golden Boy", precio: 9000000 },
+            { nombre: "Golden Boys Meet & Greet", precio: 1350000 }
+        ]
     }
+
+
+
 
 
 
@@ -276,14 +359,14 @@ router.get('/', (req, res) => {
     res.render("Home", {
         title: "Home",
         name: variables.Configuraciones.NOMBRE,
-        headerText:variables.Configuraciones.HDRTXT,
+        headerText: variables.Configuraciones.HDRTXT,
         menu: variables.NavBar.public,
         whatsapp: variables.Configuraciones.NUMWPP,
         whatsappText: variables.Configuraciones.TXTWPP,
         instagram: variables.Configuraciones.LINKIG,
         copyRight: variables.Configuraciones.COPYRG,
-        Eventos : Eventos,
-        EventosPorFecha : AgrupadosPorFecha
+        Eventos: Eventos,
+        EventosPorFecha: AgrupadosPorFecha
     });
 });
 
@@ -317,13 +400,13 @@ router.get('/entradas', (req, res) => {
     res.render("Entradas", {
         title: "Entradas",
         name: variables.Configuraciones.NOMBRE,
-        headerText:variables.Configuraciones.HDRTXT,
+        headerText: variables.Configuraciones.HDRTXT,
         menu: variables.NavBar.public,
         whatsapp: variables.Configuraciones.NUMWPP,
         whatsappText: variables.Configuraciones.TXTWPP,
         instagram: variables.Configuraciones.LINKIG,
         copyRight: variables.Configuraciones.COPYRG,
-        Evento : evento
+        Evento: evento
     });
 });
 
