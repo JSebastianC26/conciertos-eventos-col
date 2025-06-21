@@ -335,7 +335,31 @@ const Eventos = [
             { nombre: "Palcos Golden Boy", precio: 9000000 },
             { nombre: "Golden Boys Meet & Greet", precio: 1350000 }
         ]
+    },
+    {
+        id: 14,
+        artista: "FINAL LIGA BETPLAY",
+        titulo: "🏆 MEDELLÍN 🆚 SANTA FE - FINAL LIGA BETPLAY 🏆",
+        fechaHora: "Junio 29 • 6:00 PM",
+        fecha: "2025-06-29",
+        ubicacion: "Estadio Atanasio Girardot - MEDELLÍN",
+        descripcion: "🔴🔵 Este año damos la vuelta con el Medellín - Gran final contra Santa Fe. ¡Vívelo en el Atanasio!",
+        url: "/uploads/medellin-santafe.jpg",
+        promocionar: true,
+        categoria: "Fútbol",
+        agotado: false,
+        tipo: "deporte",
+        imagenLocalidades: "/uploads/medellin-santafe.jpg",
+        localidades: [
+            { nombre: "Norte", precio: 180000 },
+            { nombre: "Sur visitante", precio: 180000 },
+            { nombre: "Oriental Baja", precio: 270000 },
+            { nombre: "Oriental Alta", precio: 360000 },
+            { nombre: "Occidental Baja", precio: 460000 },
+            { nombre: "Occidental Alta", precio: 570000 }
+        ]
     }
+
 
 
 
