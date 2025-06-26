@@ -348,11 +348,11 @@ const Eventos = [
         id: 16,
         artista: "PERROS CRIOLLOS",
         titulo: "🐶 PERROS CRIOLLOS LLEGAN A PEREIRA! 🐶",
-        fechaHora: "Julio 10-13 • 8:00 PM",
+        fechaHora: "Julio 10 • 8:00 PM",
         fecha: "2025-07-10",
         ubicacion: "Centro de Convenciones Expofuturo - PEREIRA",
         descripcion: "🐶 ¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país! ¡TODAS LAS FECHAS DISPONIBLES! Mayores de 15 años. POCA BOLETERIA DISPONIBLE.",
-        url: "/uploads/perros-criollos-pereira.jpg",
+        url: "/uploads/perros-criollos-pereira-10.jpg",
         promocionar: true,
         categoria: "Comedia",
         agotado: false,
@@ -363,7 +363,67 @@ const Eventos = [
             { nombre: "Preferencial", precio: 160000 },
             { nombre: "VIP", precio: 185000 }
         ]
-    }   
+    },
+    {
+        id: 17,
+        artista: "PERROS CRIOLLOS",
+        titulo: "🐶 PERROS CRIOLLOS LLEGAN A PEREIRA! 🐶",
+        fechaHora: "Julio 11 • 8:00 PM",
+        fecha: "2025-07-11",
+        ubicacion: "Centro de Convenciones Expofuturo - PEREIRA",
+        descripcion: "🐶 ¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país! ¡TODAS LAS FECHAS DISPONIBLES! Mayores de 15 años. POCA BOLETERIA DISPONIBLE.",
+        url: "/uploads/perros-criollos-pereira-11.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "/uploads/perros-criollos-localidades.jpg",
+        localidades: [
+            { nombre: "General", precio: 120000 },
+            { nombre: "Preferencial", precio: 160000 },
+            { nombre: "VIP", precio: 185000 }
+        ]
+    },
+    {
+        id: 16,
+        artista: "PERROS CRIOLLOS",
+        titulo: "🐶 PERROS CRIOLLOS LLEGAN A PEREIRA! 🐶",
+        fechaHora: "Julio 12 • 8:00 PM",
+        fecha: "2025-07-12",
+        ubicacion: "Centro de Convenciones Expofuturo - PEREIRA",
+        descripcion: "🐶 ¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país! ¡TODAS LAS FECHAS DISPONIBLES! Mayores de 15 años. POCA BOLETERIA DISPONIBLE.",
+        url: "/uploads/perros-criollos-pereira-12.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "/uploads/perros-criollos-localidades.jpg",
+        localidades: [
+            { nombre: "General", precio: 120000 },
+            { nombre: "Preferencial", precio: 160000 },
+            { nombre: "VIP", precio: 185000 }
+        ]
+    },
+    {
+        id: 16,
+        artista: "PERROS CRIOLLOS",
+        titulo: "🐶 PERROS CRIOLLOS LLEGAN A PEREIRA! 🐶",
+        fechaHora: "Julio 13 • 8:00 PM",
+        fecha: "2025-07-13",
+        ubicacion: "Centro de Convenciones Expofuturo - PEREIRA",
+        descripcion: "🐶 ¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país! ¡TODAS LAS FECHAS DISPONIBLES! Mayores de 15 años. POCA BOLETERIA DISPONIBLE.",
+        url: "/uploads/perros-criollos-pereira-13.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "/uploads/perros-criollos-localidades.jpg",
+        localidades: [
+            { nombre: "General", precio: 120000 },
+            { nombre: "Preferencial", precio: 160000 },
+            { nombre: "VIP", precio: 185000 }
+        ]
+    }
 ];
 
 
