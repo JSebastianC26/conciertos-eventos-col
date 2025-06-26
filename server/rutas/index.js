@@ -218,45 +218,6 @@ const Eventos = [
         ]
     },
     {
-        id: 9,
-        artista: "F*CKS NEWS",
-        titulo: "🚨 F*CKS NEWS NOTICIERO -BARRANQUILLA🚨",
-        fechaHora: "JUNIO 17 • 08:00 PM",
-        fecha: "2025-06-17",
-        ubicacion: "Teatro Jose Consuegra Higgins",
-        descripcion: "🚨 F*CKS NEWS NOTICIERO -BARRANQUILLA🚨",
-        url: "/uploads/fucks-news-barranquilla.jpg",
-        promocionar: true,
-        categoria: "Comedia",
-        agotado: false,
-        tipo: "teatro",
-        imagenLocalidades: "",
-        localidades: [
-            { nombre: "GENERAL", precio: 150000 },
-            { nombre: "BALCÓN", precio: 130000 }
-        ]
-    },
-    {
-        id: 10,
-        artista: "F*CKS NEWS",
-        titulo: "🚨 F*CKS NEWS NOTICIERO -MOSQUERA",
-        fechaHora: "JUNIO 23 • 08:00 PM",
-        fecha: "2025-06-23",
-        ubicacion: "Auditorio municipal de Mosquera",
-        descripcion: "¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país!",
-        url: "/uploads/fucks-news-mosquera.jpg",
-        promocionar: true,
-        categoria: "Comedia",
-        agotado: false,
-        tipo: "teatro",
-        imagenLocalidades: "",
-        localidades: [
-            { nombre: "ZONA IZQUIERDA", precio: 150000 },
-            { nombre: "ZONA CENTRAL", precio: 150000 },
-            { nombre: "ZONA DERECHA", precio: 150000 }
-        ]
-    },
-    {
         id: 11,
         artista: "BEÉLE",
         titulo: "🎱🎵BEÉLE EN CONCIERTO 🎵🎱",
@@ -351,21 +312,58 @@ const Eventos = [
         tipo: "deporte",
         imagenLocalidades: "/uploads/medellin-santafe.jpg",
         localidades: [
-            { nombre: "Norte", precio: 180000 },
-            { nombre: "Sur visitante", precio: 180000 },
-            { nombre: "Oriental Baja", precio: 270000 },
-            { nombre: "Oriental Alta", precio: 360000 },
-            { nombre: "Occidental Baja", precio: 460000 },
-            { nombre: "Occidental Alta", precio: 570000 }
+            { nombre: "Norte", precio: 240000 },
+            { nombre: "Sur", precio: 210000 },
+            { nombre: "Sur - Familiar", precio: 230000 },
+            { nombre: "Oriental Baja", precio: 310000 },
+            { nombre: "Oriental Alta", precio: 390000 },
+            { nombre: "Occidental Baja", precio: 495000 },
+            { nombre: "Occidental Alta", precio: 595000 }
+        ]
+    },
+    {
+        id : 15,
+        artista : "DAVID GUETTA",
+        titulo : "🎧🔥 DAVID GUETTA - THE MONOLITH TOUR 2025 🔥🎧",
+        fechaHora : "Octubre 17 • 5:00 PM",
+        fecha : "2025-10-17",
+        ubicacion : "Coliseo MedPlus - BOGOTÁ",
+        descripcion : "🎧🔥 Llega uno de los shows más esperados del año: ¡música, luces y energía al máximo nivel! 🌍🔊 Evento exclusivo para mayores de 18 años. ¡No te pierdas esta noche inolvidable con David Guetta en vivo! 💥🎶",
+        url : "/uploads/david-guetta-monolith-tour.jpg",
+        promocionar : true,
+        categoria : "Música",
+        agotado : false,
+        tipo : "concierto",
+        imagenLocalidades : "/uploads/david-guetta-monolith-tour.jpg",
+        localidades : [
+            { "nombre": "Platea Delantera", "precio": 429000 },
+            { "nombre": "Gradería Zona 1 (SR113-120)", "precio": 399000 },
+            { "nombre": "Gradería Zona 2 (SR107-112)", "precio": 362000 },
+            { "nombre": "Platea Posterior", "precio": 330000 },
+            { "nombre": "Gradería Zona 3 (SR103-106)", "precio": 299000 },
+            { "nombre": "Gradería Zona 4 (SR100-102)", "precio": 246000 }
+        ]
+    },
+    {
+        id: 16,
+        artista: "PERROS CRIOLLOS",
+        titulo: "🐶 PERROS CRIOLLOS LLEGAN A PEREIRA! 🐶",
+        fechaHora: "Julio 10-13 • 8:00 PM",
+        fecha: "2025-07-10",
+        ubicacion: "Centro de Convenciones Expofuturo - PEREIRA",
+        descripcion: "🐶 ¡Prepárate para una noche de risas, locura y pura gozadera con los comediantes más callejeros y queridos del país! ¡TODAS LAS FECHAS DISPONIBLES! Mayores de 15 años. POCA BOLETERIA DISPONIBLE.",
+        url: "/uploads/perros-criollos-pereira.jpg",
+        promocionar: true,
+        categoria: "Comedia",
+        agotado: false,
+        tipo: "teatro",
+        imagenLocalidades: "/uploads/perros-criollos-localidades.jpg",
+        localidades: [
+            { nombre: "General", precio: 120000 },
+            { nombre: "Preferencial", precio: 160000 },
+            { nombre: "VIP", precio: 185000 }
         ]
     }
-
-
-
-
-
-
-
 ];
 
 
