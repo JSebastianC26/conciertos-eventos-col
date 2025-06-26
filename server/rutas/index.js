@@ -312,8 +312,8 @@ const Eventos = [
         tipo: "deporte",
         imagenLocalidades: "/uploads/medellin-santafe.jpg",
         localidades: [
-            { nombre: "Norte", precio: 240000 },
-            { nombre: "Sur", precio: 210000 },
+            { nombre: "Norte", precio: 200000 },
+            { nombre: "Sur", precio: 200000 },
             { nombre: "Sur - Familiar", precio: 230000 },
             { nombre: "Oriental Baja", precio: 310000 },
             { nombre: "Oriental Alta", precio: 390000 },
