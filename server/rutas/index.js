@@ -363,7 +363,7 @@ const Eventos = [
             { nombre: "Preferencial", precio: 160000 },
             { nombre: "VIP", precio: 185000 }
         ]
-    }
+    }   
 ];
 
 
