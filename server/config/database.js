@@ -12,9 +12,17 @@ if (SSL_DB === 'S') {
     l_ssl = true;
 }
 
+// const pool = new pg.Pool({
+//     connectionString: DATABASE_URL,
+//     ssl: l_ssl
+// });
+
 const pool = new pg.Pool({
     connectionString: DATABASE_URL,
-    ssl: l_ssl
+    ssl: {
+        rejectUnauthorized: l_ssl
+    }
 });
+
 
 export default pool;
